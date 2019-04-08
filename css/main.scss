@@ -1,0 +1,97 @@
+@font-face {
+	font-family: 'Lato';
+	src: url('fonts/lato/Lato-Regular.woff2') format('woff2'),
+		url('Lato-Regular.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Lato-bold';
+	src: url('fonts/lato/Lato-Bold.woff2') format('woff2'),
+		url('Lato-Bold.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Lato-light';
+	src: url('fonts/lato/Lato-Light.woff2') format('woff2'),
+		url('Lato-Light.woff') format('woff');
+}
+
+body{
+	font-size: 14px;
+	color: #333;
+	font-family: "Lato";
+}
+
+$gold: #F2BF62;
+
+.gold{
+	background: $gold;
+	color: $gold;
+}
+
+.clr{
+	clear: both;
+}
+
+#reviews{
+
+	img{
+		width: 100%;
+		height: 210px;
+	}
+
+	.rating{
+		ul{
+			list-style: none;
+			padding-left: 0;
+			text-align: center;
+			li{
+				display: inline-block;
+				margin: 0 5px;
+				color: $gold;
+			}
+		}
+	}
+
+	.product-title{
+		text-align: center;
+
+		a:hover{
+			color: red;
+		}
+	}
+
+
+	.avatar{
+		width: 33%;
+		display: inline-block;
+		float: left;
+		img{
+			height: 75px;
+			border-radius: 100%;
+		}
+	}
+
+	.name{
+		display: inline-block;
+		width: 66%;
+		padding-left: 10px;
+		margin-top: 25px;
+	}
+
+
+	.carousel-control-next, .carousel-control-prev{
+		color: red;
+		width: 5%;
+		font-size: 30px;
+	}
+
+	.carousel-control-prev{
+		left: -55px;
+	}
+
+	.carousel-control-next{
+		right: -55px;
+	}
+
+}
